@@ -1,0 +1,13 @@
+name: coin-flip
+services:
+  builder:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+      tags:
+        - "coin-flip:latest"
+        - "coin-flip:1.0.0"
+    volumes:
+      - type: bind
+        source: ./build
+        target: /usr/src/build
