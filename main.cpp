@@ -1,7 +1,3 @@
-// Usando o OpenMP para executar o Hello World compartilhado
-// utilizando a linguagem C
-
-// OpenMP header
 #include <omp.h>
 
 #include <stdio.h>
