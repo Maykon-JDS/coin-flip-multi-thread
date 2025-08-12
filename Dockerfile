@@ -8,4 +8,3 @@ COPY ./main.cpp /usr/src/main/
 WORKDIR /usr/src/main
 
 ENTRYPOINT [ "x86_64-w64-mingw32-g++", "-m64", "main.cpp", "-o", "../build/main.exe", "-fopenmp"]
-# CMD ["tail", "-f", "/dev/null"]
